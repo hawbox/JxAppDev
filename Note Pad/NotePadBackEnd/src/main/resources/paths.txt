@@ -1,0 +1,3 @@
+com.jersey.app.database
+com.jersey.app.notes
+com.jersey.app.user

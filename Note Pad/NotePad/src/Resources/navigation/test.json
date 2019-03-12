@@ -1,0 +1,24 @@
+{
+	"page-navigation": [{
+			"from-page": "Login",
+			"navigation-rules": {
+				"register": "Register",
+				"cancel": "/"
+			}
+		},
+		{
+			"from-page": "Register",
+			"navigation-rules": {
+				"button-name1": "page-path",
+				"button-name2": "page-path"
+			}
+		},
+		{
+			"from-page": "NotePadList",
+			"navigation-rules": {
+				"button-name3": "page-path",
+				"button-name4": "page-path"
+			}
+		}
+	]
+}

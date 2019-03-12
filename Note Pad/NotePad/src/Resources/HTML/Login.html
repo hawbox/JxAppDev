@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='/Users/ricardo/IdeaProjects/NotePad/src/Resources/css/login.css' rel='stylesheet' type='text/css'>
+    <script src="/Users/ricardo/IdeaProjects/NotePad/src/Resources/js/main.js"></script>
+    <script src="/Users/ricardo/IdeaProjects/NotePad/src/Resources/js/login.js"></script>
+</head>
+<body id="body">
+<div id="UserAgent"></div>
+
+<form action="javascript:loginUser()">
+    <div class="imgcontainer">
+        <img src="/Users/ricardo/IdeaProjects/NotePad/src/Resources/images/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+        <label ><b>Username</b></label>
+        <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+
+        <label ><b>Password</b></label>
+        <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+
+        <button name="login" type="submit">Login</button>
+        <button name="register">Register</button>
+        <!--<button name="register"onclick="moveTo();">Register</button>-->
+
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" name="cancel" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+</form>
+
+</body>
+</html>

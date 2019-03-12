@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>IVY Editor</title>
+
+    <!-- CSS -->
+    <link href="/Users/ricardo/IdeaProjects/IviEditor/src/Resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Users/ricardo/IdeaProjects/IviEditor/src/Resources/css/editor.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="/Users/ricardo/IdeaProjects/IviEditor/src/Resources/jquery/jquery-ui.css">
+    <script src="/Users/ricardo/IdeaProjects/IviEditor/src/Resources/jquery/jquery-ui.js"></script>
+    <script src="/Users/ricardo/IdeaProjects/IviEditor/src/Resources/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- JxBrowser JavaScript -->
+    <script src="/Users/ricardo/IdeaProjects/IviEditor/src/Resources/js/main.js"></script>
+
+    <!-- Ace Editor -->
+    <script src="/Users/ricardo/IdeaProjects/IviEditor/src/Resources/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- JavaScript -->
+    <script src="/Users/ricardo/IdeaProjects/IviEditor/src/Resources/js/editor.js"></script>
+
+</head>
+
+<body id="body" >
+<div id="UserAgent"></div>
+<div class="container">
+    <div class="row" id="button-container-row">
+        <div style="" id="button-container">
+            <button id="open_file" title="Open File" style="margin-left: 2px;"><span class="glyphicon glyphicon-open-file"></span><input type="file" style="display: none;" id="file_loader"></button>
+            <button id="save_file" title="Save File" style="margin-left: 5px;"><span class="glyphicon glyphicon-save-file"></span></button>
+            <button id="undo_action" title="Undo action" style="margin-left: 5px;"><i class="fas fa-undo"></i></button>
+            <button id="redo_action" title="Redo action" style="margin-left: 5px;"><i class="fas fa-redo"></i></button>
+            <button id="compile_action" title="Compile model" style="margin-left: 5px;"><span class="glyphicon glyphicon-wrench"></span></button>
+            <label id="search_label" style="margin-left: 5px;">Search:</label>
+            <input id="search_field" type="text">
+            <button id="find" title="Find" style="margin-left: 5px;"><span class="glyphicon glyphicon-search"></span></button>
+            <button id="find_next" style="margin-left: 5px;">Find Next</button>
+            <button id="find_previous" style="margin-left: 5px;">Find Previous</button>
+            <label id="replace_label" style="margin-left: 5px;">Replace:</label>
+            <input id="replace_field" type="text">
+            <button id="replace" style="margin-left: 5px;">Replace</button>
+            <button id="replace_all" style="margin-left: 5px;">Replace All</button>
+        </div>
+    </div>
+
+    <div class="row" id="resizable">
+        <div id="editor">
+            function foo(items) {
+                var x = 'All this is syntax highlighted and this is the main ';
+                return x;
+            }
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="labelrow">
+            <label>Log:</label>
+        </div>
+    </div>
+    <div class="row" id="logrow">
+        <div id="editor2">
+        <textarea id="textarearow" disabled></textarea>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/Users/ricardo/IdeaProjects/IviEditor/src/Resources/js/editor.js"></script>
+</div>
+</body>
+</html>
